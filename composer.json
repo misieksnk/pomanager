@@ -1,0 +1,23 @@
+{
+  "name": "misieksnk/pomanager",
+  "description": "PO files manager",
+  "keywords": ["po", "mo", "translation"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "misieksnk",
+      "email": "michal@brygidyn.pl"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-0": {
+      "MisiekSnk\\PoManager": "src/"
+    }
+  },
+  "require": {
+    "sepia/po-parser": "^4.2",
+    "spalax/msgfmt": "dev-master"
+  }
+}

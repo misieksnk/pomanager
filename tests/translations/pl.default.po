@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Phrase with no translation"
+msgstr ""
+
+msgid "Simple phrase"
+msgstr "Prosta fraza"
+
+#: ../somewhere/in/project.php:666
+msgid ""
+"Multiline phrase\n"
+"To translate"
+msgstr ""
+"Wielolinijkowa fraza\n"
+"Do tłumaczenia"
