@@ -28,11 +28,11 @@ Get all translations array from .po file
 
 ```php
 $poManager->getTranslationsArray();
-// [
-    'msgid_1' => 'msgstr 1',
-    'msgid_2' => 'msgstr 2',
-    ...
-]
+//[
+//    'msgid_1' => 'msgstr 1',
+//    'msgid_2' => 'msgstr 2',
+//    ...
+//]
 ```
 
 Get translation by msgid
