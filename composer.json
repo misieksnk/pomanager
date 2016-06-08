@@ -18,6 +18,6 @@
   },
   "require": {
     "sepia/po-parser": "^4.2",
-    "spalax/msgfmt": "dev-master"
+    "spalax/msgfmt": "@dev"
   }
 }
