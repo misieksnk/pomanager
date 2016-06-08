@@ -10,7 +10,6 @@
       "email": "michal@brygidyn.pl"
     }
   ],
-  "minimum-stability": "dev",
   "autoload": {
     "psr-0": {
       "MisiekSnk\\PoManager": "src/"
@@ -18,6 +17,6 @@
   },
   "require": {
     "sepia/po-parser": "^4.2",
-    "spalax/msgfmt": "@dev"
+    "spalax/msgfmt": "*"
   }
 }
