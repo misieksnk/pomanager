@@ -39,7 +39,7 @@ class PoManager
      */
     public function getTranslation($msgId)
     {
-        return !empty($this->translations[$msgId]) ? $this->translations[$msgId] : false;
+        return isset($this->translations[$msgId]) ? $this->translations[$msgId] : false;
     }
 
     /**
@@ -79,6 +79,8 @@ class PoManager
             $translations[$niceKey] = trim(join(PHP_EOL, $parsedTranslation['msgstr']));
         }
 
+        ksort($translations);
+        
         $this->translations = $translations;
         $this->parsedKeys = $parsedKeys;
     }
