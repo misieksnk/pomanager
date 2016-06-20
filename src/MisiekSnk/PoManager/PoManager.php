@@ -1,10 +1,15 @@
 <?php
 namespace MisiekSnk\PoManager;
 
-use MsgFmt\Generate;
+use MisiekSnk\MsgFmt\Generate;
 use Sepia\FileHandler;
 use Sepia\PoParser;
 
+/**
+ * Class PoManager
+ *
+ * @package MisiekSnk\PoManager
+ */
 class PoManager
 {
     private $poFile;
@@ -14,10 +19,9 @@ class PoManager
     private $parsedKeys = [];
 
     /**
-     * PoManager constructor.
      * @param $filename string Path to .po file
      */
-    public function __construct($filename)
+    public function open($filename)
     {
         $this->poFile = $filename;
         $fileHandler = new FileHandler($this->poFile);

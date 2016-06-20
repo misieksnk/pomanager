@@ -22,7 +22,8 @@ class PoManagerTest extends \PHPUnit_Framework_TestCase
      */
     public function itShouldReturnTranslationsArray()
     {
-        $poManager = new PoManager(dirname(__FILE__) . '/translations/pl.po');
+        $poManager = new PoManager();
+        $poManager->open(dirname(__FILE__) . '/translations/pl.po');
 
         $transltions = $poManager->getTranslationsArray();
         $this->assertInternalType('array', $transltions);
@@ -35,7 +36,8 @@ class PoManagerTest extends \PHPUnit_Framework_TestCase
      */
     public function itShouldReturnTranslation($phrase, $expected)
     {
-        $poManager = new PoManager(dirname(__FILE__) . '/translations/pl.po');
+        $poManager = new PoManager();
+        $poManager->open(dirname(__FILE__) . '/translations/pl.po');
 
         $translation = $poManager->getTranslation($phrase);
         $this->assertEquals($expected, $translation);
@@ -46,7 +48,8 @@ class PoManagerTest extends \PHPUnit_Framework_TestCase
      */
     public function itShouldChangeTranslation()
     {
-        $poManager = new PoManager(dirname(__FILE__) . '/translations/pl.po');
+        $poManager = new PoManager();
+        $poManager->open(dirname(__FILE__) . '/translations/pl.po');
 
         $phrase = 'Phrase with no translation';
         $translated = 'Fraza bez translacji';
@@ -62,7 +65,8 @@ class PoManagerTest extends \PHPUnit_Framework_TestCase
      */
     public function itShouldGenerateMoFile()
     {
-        $poManager = new PoManager(dirname(__FILE__) . '/translations/pl.po');
+        $poManager = new PoManager();
+        $poManager->open(dirname(__FILE__) . '/translations/pl.po');
         $poManager->updateMo();
 
         $this->assertTrue(file_exists(dirname(__FILE__) . '/translations/pl.mo'));

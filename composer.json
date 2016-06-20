@@ -17,6 +17,6 @@
   },
   "require": {
     "sepia/po-parser": "^4.2",
-    "spalax/msgfmt": "*"
+    "misieksnk/msgfmt": "*"
   }
 }
