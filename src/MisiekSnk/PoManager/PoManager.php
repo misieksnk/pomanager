@@ -21,7 +21,7 @@ class PoManager
     /**
      * @param $filename string Path to .po file
      */
-    public function open($filename)
+    public function __construct($filename)
     {
         $this->poFile = $filename;
         $fileHandler = new FileHandler($this->poFile);
